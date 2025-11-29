@@ -12,5 +12,5 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
-  base: '/portfolio/', // GitHub Pages base path - matches repository name
+  base: '/', // GitHub Pages base path for root domain (requires repo name: sudipto-dg.github.io)
 });

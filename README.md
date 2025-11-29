@@ -82,20 +82,27 @@ This project uses **GitHub Actions** for automatic deployment. Every time you pu
 
 ### Initial Setup
 
-1. **Enable GitHub Pages**:
+1. **Rename Repository for Root Domain** (Required for `https://sudipto-dg.github.io/`):
+   - Go to your repository on GitHub
+   - Navigate to **Settings** → Scroll down to **"Danger Zone"**
+   - Click **"Change repository name"**
+   - Rename from `portfolio` to `sudipto-dg.github.io` (must match your GitHub username exactly)
+   - Click **"I understand, change repository name"**
+   - ⚠️ **Important**: After renaming, update your local remote URL:
+     ```bash
+     git remote set-url origin https://github.com/sudipto-dg/sudipto-dg.github.io.git
+     ```
+
+2. **Enable GitHub Pages**:
    - Go to your repository on GitHub
    - Navigate to **Settings** → **Pages**
    - Under "Source", select **"GitHub Actions"** (not "Deploy from a branch")
    - Save
 
-2. **Update Base Path** (if needed):
-   - If your repository name is different, update the `base` path in `vite.config.ts`
-   - For custom domain, set `base: '/'`
-
 3. **Push to trigger deployment**:
    ```bash
    git add .
-   git commit -m "Initial commit"
+   git commit -m "Configure for root domain deployment"
    git push origin main
    ```
 
@@ -103,6 +110,8 @@ The GitHub Actions workflow will automatically:
 - Build your project
 - Deploy to GitHub Pages
 - Make your site available at `https://sudipto-dg.github.io/`
+
+**Note**: The `base` path in `vite.config.ts` is set to `/` for root domain deployment. This configuration requires the repository to be named `sudipto-dg.github.io`.
 
 ### Manual Deployment
 
