@@ -12,5 +12,5 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
-  base: '/', // GitHub Pages base path for root domain
+  base: '/portfolio/', // GitHub Pages base path - matches repository name
 });

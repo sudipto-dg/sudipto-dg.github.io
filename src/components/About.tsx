@@ -34,7 +34,7 @@ const About = () => {
                 type="button"
                 onClick={() => {
                   const link = document.createElement('a');
-                  link.href = '/resume.txt';
+                  link.href = '/portfolio/resume.txt';
                   link.target = '_blank';
                   link.rel = 'noopener noreferrer';
                   link.click();
