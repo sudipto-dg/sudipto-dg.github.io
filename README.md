@@ -102,7 +102,7 @@ This project uses **GitHub Actions** for automatic deployment. Every time you pu
 The GitHub Actions workflow will automatically:
 - Build your project
 - Deploy to GitHub Pages
-- Make your site available at `https://yourusername.github.io/sudipto-dg/`
+- Make your site available at `https://sudipto-dg.github.io/`
 
 ### Manual Deployment
 

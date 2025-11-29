@@ -12,5 +12,5 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
-  base: '/sudipto-dg/', // GitHub Pages base path
+  base: '/', // GitHub Pages base path for root domain
 });

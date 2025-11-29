@@ -34,7 +34,7 @@ const About = () => {
                 type="button"
                 onClick={() => {
                   const link = document.createElement('a');
-                  link.href = '/sudipto-dg/resume.pdf';
+                  link.href = '/resume.txt';
                   link.target = '_blank';
                   link.rel = 'noopener noreferrer';
                   link.click();
